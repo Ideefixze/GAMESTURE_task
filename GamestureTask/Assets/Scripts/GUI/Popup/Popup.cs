@@ -7,22 +7,31 @@ using TMPro;
 /// <summary>
 /// Base class for all Popup UI objects.
 /// </summary>
+
+[RequireComponent(typeof(Animator))]
 public class Popup : MonoBehaviour
 {
-    public TMP_Text MainText;
 
     //Close Button should not be changed
     [field:SerializeField]
     public Button CloseButton { get; private set; }
 
+    private Animator animator;
+
     void Start()
     {
+        animator = GetComponent<Animator>();
         InitPopup();
     }
 
-    void InitPopup()
+    public void ShowPopup()
     {
-        //Close Button functionality initialization
-        CloseButton.onClick.AddListener(() => Destroy(gameObject));
+        animator.SetBool("closed", false);
+    }
+
+    private void InitPopup()
+    {
+        //Close Button functionality set up
+        CloseButton.onClick.AddListener(() => animator.SetBool("closed", true));
     }
 }

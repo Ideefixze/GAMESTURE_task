@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5783078682853946339}
   - component: {fileID: 5783078682853946338}
   - component: {fileID: 5783078682853946340}
+  - component: {fileID: 2627317283445335382}
   m_Layer: 5
   m_Name: Popup
   m_TagString: Untagged
@@ -92,6 +93,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainText: {fileID: 5783078683114725149}
   <CloseButton>k__BackingField: {fileID: 5783078684367479812}
+--- !u!95 &2627317283445335382
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5783078682853946336}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0e4ed7b7e189a894dab60e193248c8cd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5783078683114725147
 GameObject:
   m_ObjectHideFlags: 0
