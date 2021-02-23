@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 14159301}
   - component: {fileID: 14159300}
   m_Layer: 5
-  m_Name: CloseButton
+  m_Name: PopupCloseButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: 236944581}
   - component: {fileID: 236944580}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -716,7 +716,7 @@ GameObject:
   - component: {fileID: 414301156}
   - component: {fileID: 414301155}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -852,7 +852,7 @@ GameObject:
   - component: {fileID: 568678324}
   - component: {fileID: 568678327}
   m_Layer: 5
-  m_Name: PopupButton
+  m_Name: PopupSpawnButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1224,7 +1224,7 @@ GameObject:
   - component: {fileID: 935676853}
   - component: {fileID: 935676852}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1713,7 +1713,7 @@ GameObject:
   - component: {fileID: 1565100658}
   - component: {fileID: 1565100657}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1923,8 +1923,9 @@ GameObject:
   - component: {fileID: 1722276385}
   - component: {fileID: 1722276387}
   - component: {fileID: 1722276386}
+  - component: {fileID: 1722276388}
   m_Layer: 5
-  m_Name: PopupPanel
+  m_Name: Popup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1989,6 +1990,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1722276384}
   m_CullTransparentMesh: 0
+--- !u!114 &1722276388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722276384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9affdaabb2ebab44a133060b671626f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainText: {fileID: 1982641885}
+  <CloseButton>k__BackingField: {fileID: 14159300}
 --- !u!1 &1726860905
 GameObject:
   m_ObjectHideFlags: 0
@@ -2077,7 +2092,7 @@ GameObject:
   - component: {fileID: 1982641886}
   - component: {fileID: 1982641885}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: PopupMainText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2211,7 +2226,7 @@ GameObject:
   - component: {fileID: 1993056195}
   - component: {fileID: 1993056194}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
