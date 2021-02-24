@@ -15,6 +15,6 @@ By Dominik Zimny
 
 All sounds used in this repository are from Public Domain
 
-# Running 
+# Running
 
-Clone repository and open project using Unity Hub.
+Clone repository and open project using Unity Hub. Then open SampleScene. 
