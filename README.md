@@ -7,3 +7,6 @@ Unity "game" window that displays three buttons with different functionalities:
 
 Below the third button there are SoundInclude(toggles) objects that change the inclusion of sounds in randomization. 
 Number of sounds can be easily modified because SoundIncludes are added dynamically to the GUI Layout.
+
+Done by
+Dominik Zimny
