@@ -337,6 +337,10 @@ PrefabInstance:
       propertyPath: m_overflowMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5783078684367479812, guid: 35fb15dedcf6d9149a673ec76b2ab6e2, type: 3}
+      propertyPath: m_Navigation.m_Mode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35fb15dedcf6d9149a673ec76b2ab6e2, type: 3}
 --- !u!224 &146151320 stripped
@@ -401,9 +405,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Popup
-
-'
+  m_text: Show Pop-up
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -533,8 +535,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
+    m_Mode: 2
+    m_SelectOnUp: {fileID: 568678324}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
@@ -686,7 +688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 2
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -931,8 +933,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
+    m_Mode: 2
+    m_SelectOnUp: {fileID: 327790944}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
@@ -1475,7 +1477,6 @@ GameObject:
   - component: {fileID: 1247321804}
   - component: {fileID: 1247321803}
   - component: {fileID: 1247321805}
-  - component: {fileID: 1247321806}
   m_Layer: 5
   m_Name: ActionsPanel
   m_TagString: Untagged
@@ -1569,19 +1570,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &1247321806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1247321801}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 967b771c30e3d0f40a9db72a3d08b713, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  includePanel: {fileID: 9120455993152823759, guid: 17b407ff518a045409d249ae48bd2ed5, type: 3}
 --- !u!1 &1565100655
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,6 +1728,7 @@ GameObject:
   - component: {fileID: 1883946249}
   - component: {fileID: 1883946248}
   - component: {fileID: 1883946247}
+  - component: {fileID: 1883946251}
   - component: {fileID: 1883946250}
   m_Layer: 0
   m_Name: SoundBank
@@ -1772,11 +1761,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05d1f32bda020da4ba4c2b5fd9165e83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioClips:
+  AudioClips:
   - {fileID: 8300000, guid: 68656bff86392994e82ed3b1f3d08dc8, type: 3}
   - {fileID: 8300000, guid: fe0d9eccfc145c6468fa0c6417d3e4b7, type: 3}
   - {fileID: 8300000, guid: f6cf484ebc6bfad408994a03c15a5a2e, type: 3}
-  options: {fileID: 1247321806}
 --- !u!4 &1883946249
 Transform:
   m_ObjectHideFlags: 0
@@ -1887,3 +1875,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1883946251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883946246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 967b771c30e3d0f40a9db72a3d08b713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  includePanel: {fileID: 9120455993152823759, guid: 17b407ff518a045409d249ae48bd2ed5, type: 3}
+  optionsTarget: {fileID: 1247321805}

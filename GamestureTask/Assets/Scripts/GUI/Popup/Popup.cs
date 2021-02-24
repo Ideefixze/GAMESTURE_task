@@ -24,14 +24,19 @@ public class Popup : MonoBehaviour
         InitPopup();
     }
 
+    /// <summary>
+    /// Shows a popup.
+    /// </summary>
     public void ShowPopup()
     {
         animator.SetBool("closed", false);
     }
 
+    /// <summary>
+    /// Adds all required functionality to the popup.
+    /// </summary>
     private void InitPopup()
     {
-        //Close Button functionality set up
         CloseButton.onClick.AddListener(() => animator.SetBool("closed", true));
     }
 }
